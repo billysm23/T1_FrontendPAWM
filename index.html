@@ -5,28 +5,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Computational Thinking Virtual Lab</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
-            <div class="navbar__container">
-                <a href="/" id="navbar__logo">CT Lab</a>
-                <div class="navbar__toggle" id="mobile-menu">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo"><i class="fa-solid fa-computer"></i>:CT Lab</a>
+                <div class="navbar_toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links">Home</a>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/" class="navbar_links">Home</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="/lesson.html" class="navbar__links">Lesson</a>
+                    <li class="navbar_item">
+                        <a href="/lesson.html" class="navbar_links">Lesson</a>
                     </li>
-                    <li class="navbar__btn">
+                    <li class="navbar_btn">
                         <a href="/" class="button">Get Started</a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Hero Section -->
+        <div class="main">
+            <div class="main_container">
+                <div class="main_content">
+                    <h1>Unlock Your Full Potential in Computational Thinking</h1>
+                    <h2></h2>
+                    <p>Dive into our interactive virtual lab designed to enhance your Computational Thinking skills. Experience hands-on learning that prepares you for real-world challenges.</p>
+                    <button class="main_btn">
+                        <a href="/">Get Started</a>
+                    </button>
+                </div>
+                <div class="main_img--container">
+                    <img src="images/pic1.svg" alt="pic1" id="main_img">
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>
