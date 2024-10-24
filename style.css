@@ -34,7 +34,7 @@ svg {
 
 #navbar_logo {
     /* background-color: rgb(89, 208, 255); */
-    background-image: linear-gradient(to top, rgb(25, 0, 255) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(to top, rgb(2, 46, 157) 0%, rgb(5, 147, 255) 45%, #fff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -815,8 +815,6 @@ svg {
     .footer_link--items h2 {
         font-size: 1.25rem;
     }
-
-    .footer_link--items {}
 }
 
 @media screen and (max-width: 480px) {
@@ -848,7 +846,7 @@ svg {
 
 /* Lesson Section */
 .lesson {
-    background-color: #c0ebff;
+    background-color: #5fa5c3;
     overflow-x: hidden;
 }
 
@@ -859,7 +857,7 @@ svg {
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #c0ebff;
+    background-color: #5fa5c3;
     z-index: 1;
     width: 100%;
     max-width: 1200px;
@@ -897,10 +895,6 @@ svg {
     display: inline-block;
 }
 
-@media screen and (min-width) {
-    
-}
-
 .lesson_toggle span {
     background-color: white;
     height: 2px;
@@ -911,12 +905,12 @@ svg {
 
 .lesson_toggle span:nth-child(1) {
     top: 50%;
-    transform: translateY(-50%) rotate(0deg); /* Horizontal line */
+    transform: translateY(-50%) rotate(0deg);
 }
 
 .lesson_toggle span:nth-child(2) {
     top: 50%;
-    transform: translateY(-50%) rotate(90deg); /* Vertical line */
+    transform: translateY(-50%) rotate(90deg);
 }
 
 .collapsible.active .bar:nth-child(1) {

@@ -1,3 +1,4 @@
+// navbar menu
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar_menu')
 
@@ -6,6 +7,7 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
+// email verification
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('subscribeForm');
     
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// notifikasi validasi email
 function showNotification(message, type) {
     const notification = document.getElementById('notification');
     const notificationMessage = document.getElementById('notificationMessage');
@@ -51,6 +54,7 @@ function closeNotification() {
     }, 500);
 }
 
+// lesson drop down
 document.addEventListener("DOMContentLoaded", function() {
     var coll = document.getElementsByClassName("collapsible");
     for (var i = 0; i < coll.length; i++) {
@@ -66,3 +70,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// compiler
+function runCode() {
+    const code = document.getElementById('code').value;
+    fetch('/run', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ code: code })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('output').innerText = data.output;
+    })
+    .catch(error => {
+        document.getElementById('output').innerText = 'Error: ' + error;
+    });
+}
