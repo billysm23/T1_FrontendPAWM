@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computational Thinking Virtual Lab</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            body {
+                background: rgb(77, 145, 155);
+            }
+        </style>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo"><i class="fa-solid fa-computer"></i>:CT Lab</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="lesson.html" class="navbar_links">Lesson</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="comingsoon.html" class="button">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Test Section -->
+        <main class="test-container">
+            <div class="test-header">
+                <h1>Computational Thinking Assessment</h1>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <form id="knowledge-test">
+                <!-- Question 1 -->
+                <div class="question" data-question="1">
+                    <h2><span class="question-number">1</span>What is the primary purpose of decomposition in computational thinking?</h2>
+                    <div class="options-grid">
+                        <label class="option-item">
+                            <input type="radio" name="q1" value="a" required>
+                            To recognize patterns
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q1" value="b">
+                            To breakdown complex problems into smaller parts
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q1" value="c">
+                            To write algorithms
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q1" value="d">
+                            To ignore irrelevant details
+                        </label>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="question" data-question="2">
+                    <h2><span class="question-number">2</span>Choose 3 of the following that are key concepts of computational thinking:</h2>
+                    <div class="options-grid">
+                        <label class="option-item">
+                            <input type="checkbox" name="q2" value="a">
+                            Decomposition
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="q2" value="b">
+                            Pattern Recognition
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="q2" value="c">
+                            Data Encryption
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="q2" value="d">
+                            Abstraction
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="q2" value="e">
+                            Machine Learning
+                        </label>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="question" data-question="3">
+                    <h2><span class="question-number">3</span>Algorithm design involves creating a step-by-step process to solve a problem.</h2>
+                    <div class="options-grid">
+                        <label class="option-item">
+                            <input type="radio" name="q3" value="true" required>
+                            True
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q3" value="false">
+                            False
+                        </label>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="question" data-question="4">
+                    <h2><span class="question-number">4</span>Arrange the following steps of algorithm design in the correct order:</h2>
+                    <ul class="sortable-list" id="sortable">
+                        <li class="sortable-item" draggable="true" data-order="1">Test the solution</li>
+                        <li class="sortable-item" draggable="true" data-order="2">Evaluate the solution</li>
+                        <li class="sortable-item" draggable="true" data-order="3">Define the problem</li>
+                        <li class="sortable-item" draggable="true" data-order="4">Create a plan</li>
+                    </ul>
+                </div>
+                <!-- Question 5 -->
+                <div class="question" data-question="5">
+                    <h2><span class="question-number">5</span>Match the computational thinking concepts with their correct descriptions:</h2>              
+                    <div class="matching-container">
+                        <div class="matching-pair">
+                            <div class="matching-concept">1. Decomposition</div>
+                            <select name="q5_1" class="matching-select" required aria-label="Match concept: Decomposition">
+                                <option value="">Select the correct description...</option>
+                                <option value="a">Focusing on key information and ignoring unnecessary details</option>
+                                <option value="b">Identifying similarities or trends in data</option>
+                                <option value="c">Breaking down complex problems</option>
+                                <option value="d">Creating a step-by-step process</option>
+                            </select>
+                        </div>
+                
+                        <div class="matching-pair">
+                            <div class="matching-concept">2. Pattern Recognition</div>
+                            <select name="q5_2" class="matching-select" required aria-label="Match concept: Pattern Recognition">
+                                <option value="">Select the correct description...</option>
+                                <option value="a">Focusing on key information and ignoring unnecessary details</option>
+                                <option value="b">Identifying similarities or trends in data</option>
+                                <option value="c">Breaking down complex problems</option>
+                                <option value="d">Creating a step-by-step process</option>
+                            </select>
+                        </div>
+                
+                        <div class="matching-pair">
+                            <div class="matching-concept">3. Abstraction</div>
+                            <select name="q5_3" class="matching-select" required aria-label="Match concept: Abstraction">
+                                <option value="">Select the correct description...</option>
+                                <option value="a">Focusing on key information and ignoring unnecessary details</option>
+                                <option value="b">Identifying similarities or trends in data</option>
+                                <option value="c">Breaking down complex problems</option>
+                                <option value="d">Creating a step-by-step process</option>
+                            </select>
+                        </div>
+                
+                        <div class="matching-pair">
+                            <div class="matching-concept">4. Algorithm Design</div>
+                            <select name="q5_4" class="matching-select" required aria-label="Match concept: Algorithm Design">
+                                <option value="">Select the correct description...</option>
+                                <option value="a">Focusing on key information and ignoring unnecessary details</option>
+                                <option value="b">Identifying similarities or trends in data</option>
+                                <option value="c">Breaking down complex problems</option>
+                                <option value="d">Creating a step-by-step process</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit Test</button>
+            </form>
+            <div class="feedback" id="feedback"></div>
+        </main>
+
+        <!-- Footer Section -->
+        <div class="footer_container">
+            <div class="footer_links">
+                <div class="footer_link--wrapper">
+                    <div class="footer_link--items">
+                        <h2>Quick Links</h2>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="https://wa.me/6287766900543">Contact Us</a>
+                        <a href="https://en.wikipedia.org/wiki/Terms_of_service">Term of Services</a>
+                    </div>
+                    <div class="footer_link--items">
+                        <h2>Social Media</h2>
+                        <a href="https://www.instagram.com">Instagram</a>
+                        <a href="https://www.youtube.com">YouTube</a>
+                        <a href="https://www.twitter.com">Twitter</a>
+                        <a href="https://www.linkedin.com">LinkedIn</a>
+                    </div>
+                    <div class="footer_link--items">
+                        <h2>Resources</h2>
+                        <a href="/comingsoon.html">Guides</a>
+                        <a href="/comingsoon.html">Blog</a>
+                        <a href="/comingsoon.html">New Features</a>
+                    </div>
+                    <div class="footer_subscribe">
+                        <h2>Subscribe</h2>
+                        <p class="subscribe-text">Join our newsletter for the latest updates and exclusive offers.</p>
+                        <form class="subscribe-form" id="subscribeForm">
+                            <input type="email" placeholder="Your Email Here" class="email-input" id="emailInput" required>
+                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                        </form>
+                        <p class="privacy-text">By subscribing, you agree to our Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social_media">
+                <div class="social_media--wrap">
+                    <div class="footer_logo">
+                        <a href="/" id="footer_logo"><i class="fa-solid fa-computer"></i></a>
+                    </div>
+                    <p class="website_right">© CT Lab 2024. All rights reserved</p>
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com" class="social_icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social_icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.twitter.com" class="social_icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com" class="social_icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="notification" class="notification">
+            <span id="notificationMessage"></span>
+            <span class="notification-close" onclick="closeNotification()">&times;</span>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
