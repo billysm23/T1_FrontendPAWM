@@ -227,7 +227,7 @@ svg {
 
 /* Hero Section */
 .main {
-    background-color: #6A9AB0;
+    background-color: #a6c4e0;
     overflow-x: hidden;
 }
 
@@ -238,7 +238,7 @@ svg {
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #6A9AB0;
+    background-color: #a6c4e0;
     z-index: 1;
     width: 100%;
     max-width: 1200px;
@@ -247,7 +247,6 @@ svg {
 
 .main_content h1 {
     font-size: 2.5rem;
-    background-color: red;
     background-image: linear-gradient(to top,  rgb(253, 253, 174) 0%, #EAD8B1 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -264,12 +263,12 @@ svg {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff4dc;
+    color: #fef7e9;
 }
 
 .main_btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, rgb(0, 14, 84) 0%, rgb(0, 136, 255) 100%);
+    background-image: linear-gradient(to top, #123759 0%, #72b7f7 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -382,7 +381,7 @@ svg {
 
 /* Features Section */
 .features {
-    background: #3A6D8C;
+    background: #84a5c4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -448,7 +447,7 @@ svg {
     border: none;
     outline: none;
     border-radius: 4px;
-    background:linear-gradient(to top, rgb(0, 14, 84) 0%, rgb(0, 136, 255) 100%);;
+    background: linear-gradient(to top, #123759 0%, #72b7f7 100%);
     position: absolute;
     top: 390px;
     left: 30px;
@@ -846,7 +845,7 @@ svg {
 
 /* Lesson Section */
 .lesson {
-    background-color: #5fa5c3;
+    background-color: #bddfff;
     min-height: 100vh;
     padding: 2rem 0;
 }
@@ -871,14 +870,14 @@ svg {
 }
 
 .collapsible {
-    background-color: #0345a0;
+    background-color: #2c6db8;
     color: white;
     cursor: pointer;
     padding: 1.25rem;
     width: 100%;
     border: none;
     text-align: left;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
@@ -923,7 +922,7 @@ svg {
 }
 
 .content {
-    background-color: #0345a0;
+    background-color: #2c6db8;
     color: white;
     display: none;
     overflow: hidden;
@@ -978,7 +977,7 @@ svg {
 }
 
 .lesson_btn {
-    background-image: linear-gradient(to top, #001a9c 0%, #0088ff 100%);
+    background-image: linear-gradient(to top, #123759 0%, #72b7f7 100%);
     border: none;
     border-radius: 4px;
     padding: 0.875rem 2rem;
