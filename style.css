@@ -442,7 +442,7 @@ svg {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-.features_card button {
+.features_card a {
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     border: none;
@@ -462,7 +462,7 @@ svg {
     cursor: pointer;
 }
 
-.features_card button:hover {
+.features_card a:hover {
     background: rgb(0, 94, 177);
 }
 
@@ -603,6 +603,54 @@ svg {
     color: #333;
     font-size: 0.9rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification.success {
+    background-color: #4CAF50;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+
+.notification-close {
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .subscribe-btn {
@@ -777,4 +825,112 @@ svg {
         padding: 14px;
         width: 100%;
     }
+}
+
+.main_coming {
+    height: 100vh;
+    background-image: url("images/pic4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .main_coming {
+        height: 50vh;
+    }
+}
+
+/* Lesson Section */
+.lesson {
+    background-color: #c0ebff;
+    overflow-x: hidden;
+}
+
+.lesson_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #c0ebff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+.collapsible {
+    background-color: #0345a0;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-right: 0px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible:hover {
+    background-color: #009df1;
+}
+
+.lesson_toggle {
+    position: absolute;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+@media screen and (min-width) {
+    
+}
+
+.lesson_toggle span {
+    background-color: white;
+    height: 2px;
+    width: 70%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.lesson_toggle span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg); /* Horizontal line */
+}
+
+.lesson_toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg); /* Vertical line */
+}
+
+.collapsible.active .bar:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.collapsible.active .bar:nth-child(2) {
+    transform: translateY(-50%) rotate(-45deg);
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #0345a0;
+    margin-bottom: 10px;
+    color: white;
 }
