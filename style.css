@@ -268,7 +268,7 @@ svg {
 
 .main_btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #123759 0%, #72b7f7 100%);
+    background-image: linear-gradient(to top, #122159 0%, #5cc3f0 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -390,7 +390,7 @@ svg {
 
 .features h1 {
     background-color: rgb(10, 10, 10);
-    background-image: linear-gradient(to right, rgb(52, 182, 243) 0%, rgb(152, 175, 250) 21%, rgb(115, 184, 230) 52%, rgb(27, 175, 255) 100%);
+    background-image: linear-gradient(to right, rgb(123, 213, 255) 0%, rgb(195, 209, 255) 21%, rgb(209, 236, 255) 52%, rgb(116, 201, 247) 100%);
     background-size: 100%;
     margin-top: 2.5rem;
     margin-bottom: 3rem;
@@ -447,7 +447,7 @@ svg {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: linear-gradient(to top, #123759 0%, #72b7f7 100%);
+    background: linear-gradient(to top, #150f56 0%, #4dcaff 100%);
     position: absolute;
     top: 390px;
     left: 30px;
@@ -870,7 +870,7 @@ svg {
 }
 
 .collapsible {
-    background-color: #2c6db8;
+    background-color: #2043ab;
     color: white;
     cursor: pointer;
     padding: 1.25rem;
@@ -922,7 +922,7 @@ svg {
 }
 
 .content {
-    background-color: #2c6db8;
+    background-color: #2043ab;
     color: white;
     display: none;
     overflow: hidden;
@@ -977,7 +977,7 @@ svg {
 }
 
 .lesson_btn {
-    background-image: linear-gradient(to top, #123759 0%, #72b7f7 100%);
+    background-image: linear-gradient(to top, #122159 0%, #5cc3f0 100%);
     border: none;
     border-radius: 4px;
     padding: 0.875rem 2rem;
