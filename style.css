@@ -1265,3 +1265,8 @@ svg {
         gap: 0.5rem;
     }
 }
+
+#saya {
+    border-radius: 10000px;
+    box-shadow: 5px 5px 15px rgba(24, 18, 0, 0.328);
+}

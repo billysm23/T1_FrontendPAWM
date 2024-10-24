@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computational Thinking Virtual Lab</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo"><i class="fa-solid fa-computer"></i>:CT Lab</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="lesson.html" class="navbar_links">Lesson</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <a href="comingsoon.html" class="button">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- AboutUs Section -->
+        <div class="main">
+            <div class="main_container">
+                <div class="main_content">
+                    <h1>Halo, nama saya Billy dengan NIM 18222039</h1>
+                    <p>Saya membuat web ini cukup lama karena saya belum familiar dengan html, css, dan js. Apalagi di bagian test termasuk kompleks untuk bagian javascript-nya.</p>
+                    <button class="main_btn">
+                        <a href="lesson.html">Get Started</a>
+                    </button>
+                </div>
+                <div class="main_img--container">
+                    <img src="images/Billy.jpg" width="250" alt="pic1" id="saya">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer_container">
+            <div class="footer_links">
+                <div class="footer_link--wrapper">
+                    <div class="footer_link--items">
+                        <h2>Quick Links</h2>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="https://wa.me/6287766900543">Contact Us</a>
+                        <a href="https://en.wikipedia.org/wiki/Terms_of_service">Term of Services</a>
+                    </div>
+                    <div class="footer_link--items">
+                        <h2>Social Media</h2>
+                        <a href="https://www.instagram.com">Instagram</a>
+                        <a href="https://www.youtube.com">YouTube</a>
+                        <a href="https://www.twitter.com">Twitter</a>
+                        <a href="https://www.linkedin.com">LinkedIn</a>
+                    </div>
+                    <div class="footer_link--items">
+                        <h2>Resources</h2>
+                        <a href="/comingsoon.html">Guides</a>
+                        <a href="/comingsoon.html">Blog</a>
+                        <a href="/comingsoon.html">New Features</a>
+                    </div>
+                    <div class="footer_subscribe">
+                        <h2>Subscribe</h2>
+                        <p class="subscribe-text">Join our newsletter for the latest updates and exclusive offers.</p>
+                        <form class="subscribe-form" id="subscribeForm">
+                            <input type="email" placeholder="Your Email Here" class="email-input" id="emailInput" required>
+                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                        </form>
+                        <p class="privacy-text">By subscribing, you agree to our Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social_media">
+                <div class="social_media--wrap">
+                    <div class="footer_logo">
+                        <a href="/" id="footer_logo"><i class="fa-solid fa-computer"></i></a>
+                    </div>
+                    <p class="website_right">© CT Lab 2024. All rights reserved</p>
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com" class="social_icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com" class="social_icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.twitter.com" class="social_icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com" class="social_icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="notification" class="notification">
+            <span id="notificationMessage"></span>
+            <span class="notification-close" onclick="closeNotification()">&times;</span>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
